@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hsl(216, 12%, 8%);
+    margin: 0;
+}
+
+
+.cardRate, .cardThanks{
+    width: 25%;
+    background: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.rateBox{
+    display: flex;
+    margin-top: 1.2em;
+    width: 100%;
+    margin-bottom: 1.5em;
+    justify-content: space-between;
+}
+.rateBox p{
+    background: hsl(216, 12%, 8%, 50%) ;
+    padding: .9em  1.2em;
+    color: hsl(217, 12%, 63%);
+    border-radius: 100%;
+}
+.btnSubmit{
+    background: hsl(25, 97%, 53%);
+    padding-top: .8em;
+    padding-bottom: .8em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 3s;
+    color: hsl(0, 0%, 100%);
+}
+.btnSubmit:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.btnSubmit p{
+    color: hsl(0, 0%, 100%);
+}
+
+.cardRate{
+    padding: 1.3em;
+    display: block; /* This is where I have hidden the rate card*/
+}
+#rateLogo{
+    padding: 1em;
+    border-radius: 100%;
+    background: hsl(216, 12%, 8%,55%);
+}
+.headingText{
+    padding-top: 1em;
+    color: hsl(0, 0%, 100%);
+}
+.mainContent{
+    margin-top: 1em;
+    color: hsl(216, 12%, 54%);
+}
+.cardThanks{
+    display: flex;
+    flex-direction: column;
+    padding: 2.3em;
+    align-items: center;
+    justify-content: space-between;
+    display: none; /* This is where I have hidden the thank card */
+}
+#thanksLogo{
+    margin: 0 auto;
+}
+#numSelected{
+    margin-top: 1em;
+    color: hsl(25, 97%, 53%);
+    padding: .5em;
+    border-radius: 15px;
+    background: hsl(216, 12%, 8%);
+
+}
+#ThanksText{
+    margin-top: 1.5em;
+    color: hsl(0, 0%, 100%);
+}
+
+.thanksMessage{
+    margin-top: 1.1em;
+    color: hsl(216, 12%, 54%);
+    width: 81.8%;
+    text-align: center;
+}
+
+
+/*************************
+Active states of the page 
+**************************/
+
+.rateBox p:hover{
+    cursor: pointer;
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 500px) {
+    .cardRate, .cardThanks{
+        width: 90%;
+ 
+    }
+
+    
+}
