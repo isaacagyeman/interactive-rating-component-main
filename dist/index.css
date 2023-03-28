@@ -43,6 +43,7 @@ body{
     align-items: center;
     color: hsl(0, 0%, 100%);
 }
+
 .btnSubmit:hover{
     cursor: pointer;
     background-color: hsl(0, 0%, 100%);
@@ -72,32 +73,34 @@ body{
 .cardThanks{
     display: flex;
     flex-direction: column;
-    padding: 2.3em;
-    align-items: center;
-    justify-content: space-between;
+    padding: 2.15em;
     display: none; /* This is where I have hidden the thank card */
 }
 #thanksLogo{
-    margin: 0 auto;
+    margin-left: 15%;
+    padding: .7em;
 }
 #numSelected{
-    margin-top: 1em;
     color: hsl(25, 97%, 53%);
-    padding: .5em;
-    border-radius: 15px;
-    background: hsl(216, 12%, 8%);
-
+}
+.numContainer{
+    width: fit-content;
+    border-radius: 20px;
+    background: hsl(216,12%,8%);
+    margin: 0 auto;
+    padding: .3em .8em;
 }
 #ThanksText{
     margin-top: 1.5em;
     color: hsl(0, 0%, 100%);
+    text-align: center;
 }
 
 .thanksMessage{
     margin-top: 1.1em;
     color: hsl(216, 12%, 54%);
-    width: 81.8%;
-    text-align: center;
+    text-align:center;
+    font-size: 13.5px;
 }
 
 
@@ -111,7 +114,7 @@ Active states of the page
     color: hsl(0, 0%, 100%);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .cardRate, .cardThanks{
         width: 90%;
  
