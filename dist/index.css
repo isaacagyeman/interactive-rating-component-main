@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Overpass;
+    src: url('/assets/fonts/Overpass-VariableFont_wght.ttf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +15,9 @@ body{
     height: 100vh;
     background: hsl(216, 12%, 8%);
     margin: 0;
+    font-family: 'Overpass';
+    /* font-weight: 500 ; */
+
 }
 
 
@@ -65,10 +72,14 @@ body{
 .headingText{
     padding-top: 1em;
     color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 1.8em;
 }
 .mainContent{
     margin-top: 1em;
     color: hsl(216, 12%, 54%);
+    font-weight: 500;
+    font-size: .85em;
 }
 .cardThanks{
     display: flex;
@@ -89,18 +100,22 @@ body{
     background: hsl(216,12%,8%);
     margin: 0 auto;
     padding: .3em .8em;
+    margin-top: 1em;
 }
 #ThanksText{
     margin-top: 1.5em;
     color: hsl(0, 0%, 100%);
     text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
 }
 
 .thanksMessage{
     margin-top: 1.1em;
     color: hsl(216, 12%, 54%);
     text-align:center;
-    font-size: 13.5px;
+    font-weight: 500;
+    font-size: .75em;
 }
 
 
