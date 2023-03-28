@@ -41,7 +41,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: background 3s;
     color: hsl(0, 0%, 100%);
 }
 .btnSubmit:hover{
