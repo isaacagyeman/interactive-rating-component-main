@@ -32,11 +32,12 @@ body{
     margin-bottom: 1.5em;
     justify-content: space-between;
 }
-.rateBox p{
+.rateBox a{
     background: hsl(216, 12%, 8%, 50%) ;
     padding: .9em  1.2em;
     color: hsl(217, 12%, 63%);
     border-radius: 100%;
+
 }
 .btnSubmit{
     background: hsl(25, 97%, 53%);
@@ -121,9 +122,13 @@ body{
 Active states of the page 
 **************************/
 
-.rateBox p:hover{
+.rateBox a:hover{
     cursor: pointer;
     background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+.rateBox a.active{
+    background: hsl(217,12%,63%);
     color: hsl(0, 0%, 100%);
 }
 
