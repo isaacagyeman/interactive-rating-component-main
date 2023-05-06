@@ -132,7 +132,7 @@ Active states of the page
     color: hsl(0, 0%, 100%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .cardRate, .cardThanks{
         width: 90%;
  
