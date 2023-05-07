@@ -28,7 +28,7 @@ body{
 .rateBox{
     display: flex;
     margin-top: 1.2em;
-    width: 100%;
+    min-width: 100%;
     margin-bottom: 1.5em;
     justify-content: space-between;
 }
@@ -131,12 +131,19 @@ Active states of the page
     background: hsl(217,12%,63%);
     color: hsl(0, 0%, 100%);
 }
-
+/* Media query for screens that are mobile size and smaller */
 @media screen and (max-width: 500px) {
     .cardRate, .cardThanks{
         width: 90%;
  
     }
 
-    
+}
+/* Media query for screens that are tablets size and bigger */
+@media screen and (min-width: 504px) {
+    .cardRate, .cardThanks{
+        /* background: red; */
+        width: 75%;
+ 
+    }
 }
